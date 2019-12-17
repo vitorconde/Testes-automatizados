@@ -31,7 +31,10 @@ class Leilao:
                 self.maior_lance = lance.valor
             if lance.valor < self.menor_lance:
                 self.menor_lance = lance.valor
+
             self.__lances.append(lance)
+        else:
+            raise ValueError('O mesmo usuário não pode propor 2 lances seguidos')
 
     @property
     def lances(self):
