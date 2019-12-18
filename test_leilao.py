@@ -82,3 +82,4 @@ class TestLeilao(TestCase):
             self.leilao.propoe(self.lance_do_gui)
             self.leilao.propoe(lance_do_gui_200)
 
+
